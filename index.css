@@ -1,0 +1,77 @@
+html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('backgroundimage.jpg');
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: fantasy; 
+    font-size: 75px;
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(var(--grid-columns), 1fr);
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    width: 500px;
+    height: 500px;
+    border: 2px solid #000000;
+    margin-top: 30px;
+    margin-left: 362px;
+    margin-bottom: 30px;
+    background-color: white;
+
+}
+
+.gridBox {
+    border: 1px solid rgb(248, 248, 248);
+}
+
+.resetButton {  
+  padding: 0.75em 2em;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  border: 2px solid black;
+  font-family: Arial;
+  font-size: 13px;
+  display: inline-block;
+  border-radius: 0.3em;
+  transition: all 0.1s ease-in-out;
+  position: relative;
+  margin-left: 519px;
+}
+
+.resetButton:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.changeSize {
+    padding: 0.75em 2em;
+    text-align: center;
+    text-decoration: none;
+    width: 40px;
+    outline: none;
+    color: black;
+    border: 2px solid black;
+    font-family: Arial;
+    font-size: 13px;
+    display: inline-block;
+    border-radius: 0.3em;
+    position: relative;
+}
+
+input:focus::placeholder {
+    color: transparent;
+  }
+
+::placeholder {
+    color: black;
+  }
